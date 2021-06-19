@@ -1,0 +1,39 @@
+{{template "header"}}
+
+<form method="GET">
+    <h1> TA2 Programacion Concurrente y Distribuida</h1>
+    <label for ="KNearest">KNearest</label>
+    <input type ="number" id = "KNearest" name ="KNearest">
+    <br>
+    <label for ="GRUPO">GRUPO (0-8)</label>
+    <input type ="number" id = "GRUPO" name ="GRUPO" min="0" max="8">
+    <br>
+    <label for ="EDAD"> EDAD(0-100)</label>
+    <input type = "number" id= "EDAD" name = "EDAD" min="0" max="100">
+    <br>
+    <label for ="SEXO"> SEXO(Hombre 0 - Mujer 1)</label>
+    <input type = "number" id= "SEXO" name = "SEXO" min="0" max="1">
+    <br>
+    <label for ="DOSIS"> DOSIS(0-2)</label>
+    <input type = "number" id= "DOSIS" name = "DOSIS" min="0" max="2">
+    <br>
+    <label for ="UBIGEO"> UBIGEO(0-25)</label>
+    <input type = "number" id= "UBIGEO" name = "UBIGEO" min="0" max="25">
+    <br>
+    <input type = "submit">
+</form>
+
+<br>
+
+<h1>KNearest: {{.KNearest}}</h1>
+<h1>GRUPO: {{.GRUPO}}</h1>
+<h1>EDAD: {{.EDAD}}</h1>
+<h1>SEXO: {{.SEXO}}</h1>
+<h1>DOSIS: {{.DOSIS}}</h1>
+<h1>UBIGEO: {{.UBIGEO}}</h1>
+<h1>Clase: {{.Eleccion}}</h1>
+<h1>K-Vecinos: {{.RESULTADO}}</h1>
+
+
+<h2>Alumno :Diego Urrutia Ley</h2>
+
